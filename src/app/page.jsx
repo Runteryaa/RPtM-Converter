@@ -100,7 +100,7 @@ export default function Page() {
         }
       } else {
         setIconBlob(null);
-        setIconPreview("https://raw.githubusercontent.com/Runteryaa/RPtM/main/src/main/resources/assets/rptm/icon.png");
+        setIconPreview("/rptm.png");
         setShowIconsPanel(false);
       }
 
@@ -235,13 +235,10 @@ export default function Page() {
         jar.file("pack.png", iconBlob);
       } else {
         try {
-          const response = await fetch("https://raw.githubusercontent.com/Runteryaa/RPtM/main/src/main/resources/assets/rptm/icon.png");
+          const response = await fetch("/rptm.png");
           if (response.ok) {
             const fetchedIconBlob = await response.blob();
             jar.file("pack.png", fetchedIconBlob);
-          } else {
-            const fallbackIcon = "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABDSURBVGhD7cExAQAAAMKg9U9tCy8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDFLAAABb/T6wgAAAABJRU5ErkJggg==";
-            jar.file("pack.png", fallbackIcon, { base64: true });
           }
         } catch (e) {
           console.error("RPtM icon couldn't be loaded:", e);
@@ -275,6 +272,9 @@ export default function Page() {
           </a>
           <a href="https://github.com/Runteryaa/RPtM" target="_blank" rel="noreferrer" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors flex items-center gap-2 bg-neutral-900 px-4 py-2 rounded-lg border border-neutral-800 hover:border-neutral-700">
             View Mod on GitHub
+          </a>
+          <a href="https://github.com/Runteryaa/RPtM-Converter" target="_blank" rel="noreferrer" className="text-sm font-medium text-neutral-400 hover:text-purple-400 transition-colors flex items-center gap-2 bg-neutral-900 px-4 py-2 rounded-lg border border-neutral-800 hover:border-purple-500/50">
+            View Converter on GitHub
           </a>
         </div>
       </header>
