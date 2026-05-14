@@ -201,7 +201,7 @@ export default function Page() {
         depends: {
           fabricloader: ">=0.15.0",
           minecraft: "*",
-          rptm: "*" 
+          rptmlib: "*" 
         },
         suggests: {
           respackopts: "*"
