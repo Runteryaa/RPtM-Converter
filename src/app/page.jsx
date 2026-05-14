@@ -200,7 +200,7 @@ export default function Page() {
         environment: "*",
         depends: {
           fabricloader: ">=0.15.0",
-          minecraft: "*",
+          minecraft: ">=1.20",
           rptmlib: "*" 
         },
         suggests: {
