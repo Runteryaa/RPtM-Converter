@@ -580,7 +580,7 @@ export default function Page() {
               <div className="bg-neutral-900/50 rounded-xl p-6 border border-neutral-800">
                 <h3 className="text-lg font-semibold text-indigo-400 mb-2">Is RPtM Converter open source?</h3>
                 <p className="text-neutral-300 text-sm leading-relaxed">
-                  Yes! Both the RPtM Converter website and the required RPtMLib mod are fully open-source. You can view the source code, report issues, or contribute to the project. <a href="https://github.com/Runteryaa/RPtM" target="_blank" rel="noreferrer" className="text-white underline hover:text-indigo-400">RPtMLib GitHub</a> <a href="https://github.com/Runteryaa/RPtM-Converter" target="_blank" rel="noreferrer" className="text-white underline hover:text-indigo-400">RPtM Converter GitHub</a>.
+                  Yes! Both the RPtM Converter website and the required RPtMLib mod are fully open-source. You can view the source code, report issues, or contribute to the project. <a href="https://github.com/Runteryaa/RPtM" target="_blank" rel="noreferrer" className="text-amber-400 font-semibold hover:underline">RPtMLib GitHub</a> <a href="https://github.com/Runteryaa/RPtM-Converter" target="_blank" rel="noreferrer" className="text-amber-400 font-semibold hover:underline">RPtM Converter GitHub</a>.
                 </p>
               </div>
               
