@@ -556,6 +556,57 @@ export default function Page() {
             </div>
           </div>
         </div>
+        <div className="col-span-1 lg:col-span-2 mt-12 space-y-8 border-t border-neutral-800 pt-12">
+          <section className="bg-neutral-900/30 rounded-2xl p-8 border border-neutral-800/50">
+            <h2 className="text-xl font-bold text-white mb-4">About RPtM Converter</h2>
+            <p className="text-neutral-300 leading-relaxed mb-4">
+              RPtM Converter is a free, browser-based tool designed to instantly convert Minecraft resource packs into functional Fabric mods. Now you can simply drag and drop your resource pack files, and we will package them into a ready-to-use mod.
+            </p>
+            <p className="text-neutral-300 leading-relaxed">
+              Because all processing is done locally within your browser using JavaScript, your files are completely secure and are never uploaded to any external servers.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-neutral-900/50 rounded-xl p-6 border border-neutral-800">
+                <h3 className="text-lg font-semibold text-indigo-400 mb-2">Do I need to install anything?</h3>
+                <p className="text-neutral-300 text-sm leading-relaxed">
+                  You do not need to install any software to use the converter. However, to run the generated mod in Minecraft, you must install the <a href="https://modrinth.com/mod/rptmlib/" target="_blank" rel="noreferrer" className="text-amber-400 font-semibold hover:underline">RPtMLib</a> dependency in your mods folder alongside your new generated mod.
+                </p>
+              </div>
+
+              <div className="bg-neutral-900/50 rounded-xl p-6 border border-neutral-800">
+                <h3 className="text-lg font-semibold text-indigo-400 mb-2">Is RPtM Converter open source?</h3>
+                <p className="text-neutral-300 text-sm leading-relaxed">
+                  Yes! Both the RPtM Converter website and the required RPtMLib mod are fully open-source. You can view the source code, report issues, or contribute to the project. <a href="https://github.com/Runteryaa/RPtM" target="_blank" rel="noreferrer" className="text-white underline hover:text-indigo-400">RPtMLib GitHub</a> <a href="https://github.com/Runteryaa/RPtM-Converter" target="_blank" rel="noreferrer" className="text-white underline hover:text-indigo-400">RPtM Converter GitHub</a>.
+                </p>
+              </div>
+              
+              <div className="bg-neutral-900/50 rounded-xl p-6 border border-neutral-800">
+                <h3 className="text-lg font-semibold text-indigo-400 mb-2">Can I merge multiple resource packs?</h3>
+                <p className="text-neutral-300 text-sm leading-relaxed">
+                  Yes! You can upload multiple resource pack files at once. The converter will automatically merge them into a single RPtM mod. You can even choose which uploaded pack's icon to use for the final mod.
+                </p>
+              </div>
+
+              <div className="bg-neutral-900/50 rounded-xl p-6 border border-neutral-800">
+                <h3 className="text-lg font-semibold text-indigo-400 mb-2">Is my data safe?</h3>
+                <p className="text-neutral-300 text-sm leading-relaxed">
+                  Absolutely. The conversion process is entirely client-side. Your resource packs are processed using your device's memory and are never transmitted across the internet.
+                </p>
+              </div>
+
+              <div className="bg-neutral-900/50 rounded-xl p-6 border border-neutral-800">
+                <h3 className="text-lg font-semibold text-indigo-400 mb-2">Does this support Forge or NeoForge?</h3>
+                <p className="text-neutral-300 text-sm leading-relaxed">
+                  Currently, the RPtM Converter specifically generates mods for the Fabric mod loader. The generated `.jar` file requires the Fabric API and <a href="https://modrinth.com/mod/rptmlib/" target="_blank" rel="noreferrer" className="text-amber-400 font-semibold hover:underline">RPtMLib</a> to function correctly in-game.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
   );
