@@ -7,12 +7,18 @@ export const viewport = {
 
 export const metadata = {
   title: 'RPtM Converter | Resource Pack to Mod',
-  description: 'Free and instant online tool to convert Minecraft resource packs into Fabric mods in your browser. Supports multiple packs and custom icons.',
-  keywords: ['minecraft', 'resource pack converter', 'resource pack to mod', 'fabric mod', 'zip to jar', 'mcpack', 'modding tool', 'RPtM'],
+  description: 'Free and instant online tool to convert Minecraft resource packs into mods in your browser. Supports multiple packs and custom icons.',
+  keywords: ['minecraft', 'resource pack converter', 'resource pack to mod', 'fabric mod', 'modding tools', 'RPtM'],
   authors: [{ name: 'Runterya', url: 'https://github.com/Runteryaa' }],
+  icons: {
+    icon: '/rptm.png',
+  },
+  verification: {
+    google: 'bAOoNhpOSqDWF7-4xJ2zJsPtXz6BHK7kEh9_XjLjQ24',
+  },
   openGraph: {
     title: 'RPtM Converter | Resource Pack to Mod',
-    description: 'Turn any Minecraft Resource Pack into a Mod instantly.',
+    description: 'Turn any Minecraft Resource Pack to Mod instantly.',
     url: 'https://rptm.pages.dev',
     siteName: 'RPtM Converter',
     images: [
@@ -20,7 +26,7 @@ export const metadata = {
         url: 'https://rptm.pages.dev/rptm.png',
         width: 9,
         height: 9,
-        alt: 'RPtM Converter Preview',
+        alt: 'RPtM Converter',
       },
     ],
     locale: 'en_US',
@@ -29,7 +35,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Google için yapılandırılmış veri (Sitenin bir web uygulaması olduğunu belirtir)
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -47,7 +52,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="bAOoNhpOSqDWF7-4xJ2zJsPtXz6BHK7kEh9_XjLjQ24" />
       <body>
         <script
           type="application/ld+json"
