@@ -8,7 +8,7 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL('https://rptm.pages.dev'),
   title: 'RPtM Converter | Resource Pack to Mod Converter',
-  description: 'Free and open source Resource Pack to Mod Converter tool to convert Minecraft resource packs into mods in your browser. Supports multiple packs and custom icons. MPtMLib required.',
+  description: 'Free and open source Resource Pack to Mod Converter tool to convert Minecraft resource packs into mods in your browser. MPtMLib required.',
   keywords: ['minecraft', 'RPtM Converter', 'resource pack converter', 'resource pack to mod', 'fabric mod', 'modding tools', 'RPtM'],
   authors: [{ name: 'Runterya', url: 'https://github.com/Runteryaa' }],
   icons: {
