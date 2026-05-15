@@ -2,8 +2,8 @@ import React from 'react';
 import './globals.css';
 
 export const metadata = {
-  title: 'RPtM Converter',
-  description: 'Convert your resource packs to mods',
+  title: 'RPtM Converter (Resource Pack to Mod)',
+  description: 'Resource Pack to Mod Converter. Convert your packs to RPtM mods.',
 };
 
 export default function RootLayout({ children }) {
