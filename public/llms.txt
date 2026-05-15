@@ -1,0 +1,19 @@
+# RPtM Converter
+
+> Free and open source Resource Pack to Mod Converter tool.
+
+RPtM Converter is a web application that allows users to instantly convert Minecraft resource packs into Fabric mods directly in their browser.
+
+## Features
+- Browser-based conversion (no installation required)
+- Supports multiple resource packs
+- Custom icon support
+- Generates Fabric mods
+
+## Requirements
+- [MPtMLib](https://modrinth.com/mod/rptmlib/) is required to run the generated mods.
+
+## Links
+- Website: https://rptm.pages.dev
+- Source Code: https://github.com/Runteryaa/RPtM
+- Author: Runterya

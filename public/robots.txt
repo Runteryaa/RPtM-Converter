@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rptm.pages.dev/sitemap.xml
