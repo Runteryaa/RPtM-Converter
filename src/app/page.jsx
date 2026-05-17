@@ -607,6 +607,16 @@ export default function Page() {
             </div>
           </section>
         </div>
+<div 
+  className="flex justify-center opacity-40 hover:opacity-100 transition-opacity duration-300 my-8"
+  dangerouslySetInnerHTML={{
+    __html: `
+      <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cc96c3c66582e0d5f253d7cefc9e7d078fe8991f'></script>
+      <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1554179/t/10"></script>
+    `
+  }} 
+/>
+
       </main>
     </div>
   );
